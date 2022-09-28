@@ -70,3 +70,76 @@ var data = [
     priority: "normal",
   }
 ]
+
+var data = [
+
+  {
+    ava: "https://images.generated.photos/lxn-bIaEzloPJrSNE7LxQGd7ITCp64lPJOb9X17nckQ/rs:fit:256:256/czM6Ly9pY29uczgu/Z3Bob3Rvcy1wcm9k/LnBob3Rvcy8wMDky/NDU3LmpwZw.jpg",
+    name: "Bryar Munoz",
+    phone: "(452) 434-5002",
+    email: "risus.nulla@hotmail.edu",
+    address: "581-4747 Porttitor Av.",
+    time: "8:51 AM",
+    company: "A Felis LLC",
+    text: "in molestie tortor nibh sit",
+    date_of_onliine: "Mar 20, 2022",
+    date_of_register: "Jun 14, 2019",
+    priority: "high",
+  },
+
+  {
+    ava: "https://images.generated.photos/rg-8c9LCv1w3B4q2759DL66UGzYU0nHgmEpbJmB_0IE/rs:fit:256:256/czM6Ly9pY29uczgu/Z3Bob3Rvcy1wcm9k/LnBob3Rvcy8wMDky/Mzk3LmpwZw.jpg",
+    name: "Colorado Pate",
+    phone: "1-204-485-8649",
+    email: "non.dapibus.rutrum@yahoo.com",
+    address: "936-7204 Dis Road",
+    time: "5:31 AM",
+    company: "Neque Sed Limited",
+    text: "sodales",
+    date_of_onliine: "Aug 6, 2021",
+    date_of_register: "Mar 9, 2021",
+    priority: "normal",
+  },
+
+  {
+    ava: "https://images.generated.photos/4E0S_JMm5u6PxaD4O8YPB58nFnN5sJbUTL78JM6Z3gw/rs:fit:256:256/czM6Ly9pY29uczgu/Z3Bob3Rvcy1wcm9k/LnBob3Rvcy8wMDM1/NzU1LmpwZw.jpg",
+    name: "Rebecca Kirby",
+    phone: "1-717-652-3873",
+    email: "vulputate.lacus.cras@hotmail.com",
+    address: "134-3715 Risus Avenue",
+    time: "3:53 AM",
+    company: "Ac Urna LLC",
+    text: "euismod urna. Nullam lobortis quam a",
+    date_of_onliine: "Nov 12, 2022",
+    date_of_register: "Nov 29, 2017",
+    priority: "normal",
+  },
+
+  {
+    ava: "https://images.generated.photos/pRbuNGmKEF6lnEEL6QFcq49mwe_CCABdqhOZ6YODn60/rs:fit:256:256/czM6Ly9pY29uczgu/Z3Bob3Rvcy1wcm9k/LnBob3Rvcy8wMDg2/NjE3LmpwZw.jpg",
+    name: "Richard Armstrong",
+    phone: "1-980-747-9857",
+    email: "in.consequat.enim@outlook.org",
+    address: "306-9854 Dignissim. Street",
+    time: "8:32 AM",
+    company: "Fermentum Metus Aenean Ltd",
+    text: "vel, mauris. Integer sem elit, pharetra ut, pharetra sed,",
+    date_of_onliine: "Jul 13, 2021",
+    date_of_register: "Nov 11, 2015",
+    priority: "normal",
+  },
+
+  {
+    ava: "https://images.generated.photos/RjI2J1P7qIRu2WVm7K1Ej-2SO3T4pv9jdbHySU4N4sA/rs:fit:256:256/czM6Ly9pY29uczgu/Z3Bob3Rvcy1wcm9k/LnBob3Rvcy8wMjQ1/MjYwLmpwZw.jpg",
+    name: "Dawn Maddox",
+    phone: "(727) 614-8640",
+    email: "sem.ut.dolor@icloud.couk",
+    address: "7800 Et Street",
+    time: "10:43 PM",
+    company: "Massa Inc.",
+    text: "Proin vel nisl.",
+    date_of_onliine: "Apr 22, 2022",
+    date_of_register: "May 7, 2021",
+    priority: "normal",
+  }
+]
