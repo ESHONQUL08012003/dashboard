@@ -32,6 +32,20 @@ body {
   opacity: 0.7;
 }
 
+
+.red{
+  background-color: red;
+}
+
+.green{
+  background-color: #15f820;
+}
+
+
+.yellow{
+  background-color: yellow;
+}
+
 .aside__list {
   height: 80.5vh;
   margin: 0;
@@ -84,55 +98,30 @@ body {
 .header__nav input{
   order: -1;
 }
-.search-header{
+
+
+.search-img{
+  margin-right: 30px;
+}
+
+.search-input{
   display: none;
 }
-.search-header-active{
-  display: block;
-}
-.search-button-active{
-  display: block;
-}
-.search-button-none{
-  display: none;
-}
+
+
+
 .actives{
+  display: block;
+  width: 400px;
+  padding: 5px 15px;
   border: 2px solid red;
+  margin-right: 100px;
+  border: none;
+  outline: none;
   box-shadow: 0 0 3px 5px aqua;
+  border-radius: 5px;
 }
-.priority-high{
-  border: none;
-  padding: 5px 20px;
-  font-style: normal;
-  font-weight: 700;
-  font-size: 11px;
-  line-height: 14px;
-  background: #f12b2c;
-  border-radius: 100px;
-  color: white;
-}
-.priority-normal{
-  border: none;
-  padding: 5px 20px;
-  font-style: normal;
-  font-weight: 700;
-  font-size: 11px;
-  line-height: 14px;
-  background: #15f820;
-  border-radius: 100px;
-  color: white;
-}
-.priority-low{
-  border: none;
-  padding: 5px 20px;
-  font-style: normal;
-  font-weight: 700;
-  font-size: 11px;
-  line-height: 14px;
-  background: #d2f815;
-  border-radius: 100px;
-  color: white;
-}
+
 .contact {
   display: flex;
   justify-content: space-between;
@@ -149,11 +138,6 @@ body {
   color: #252733;
 }
 
-.button__search {
-  padding: 0 12px;
-  border: none;
-  background-color: #e5e5e5;
-}
 
 .contact {
   width: 100%;
@@ -219,7 +203,6 @@ body {
   font-weight: 700;
   font-size: 11px;
   line-height: 14px;
-  background: #f12b2c;
   border-radius: 100px;
   color: white;
 }

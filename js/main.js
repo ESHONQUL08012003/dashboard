@@ -1,30 +1,41 @@
 let tbody = document.querySelector(".tbody");
-let elImg = document.querySelector(".button__search");
+let elImg = document.querySelector(".search-img");
 let elNav = document.querySelector(".header__nav");
-let inputSearch = document.querySelector(".search-header");
+let searchInput = document.querySelector(".search-input");
+let selestSorting =document.querySelector(".controllers__sort");
+let selectFilter = document.querySelector(".controllers__filter");
+elImg.addEventListener("click", () => {
+  searchInput.classList.toggle("actives");
+  let serchInputName = [];
+  searchInput.addEventListener("input", () =>{
+    let valueInput = searchInput.value.trim().toLowerCase()
 
-elImg.onclick = function () {
-  inputSearch.classList.add("search-header-active");
-  this.classList.add("search-button-none");
-  inputSearch.addEventListener("keydown", (event) => {
-    if (event.key === "Enter") {
-      inputSearch.classList.remove("search-header-active");
-      elImg.classList.remove("search-button-none");
-      elImg.classList.add("search-button-active");
+    function renderSearchItem(searching){
+      let serchInputName = [];
+      tbody.innerHTML = "";
+      searching.forEach(users => {
+        if(users.name.toLowerCase().includes(valueInput)){
+          serchInputName.push(users)
+          console.log(serchInputName);
+          console.log(serchInputName);
+        }
+      });
+      renderUser(serchInputName);
     }
+    renderSearchItem(data);
   });
-};
+});
 
 const colorFunction = (names) => {
   let red = "red";
   let green = "green";
   let yellow = "yellow";
 
-  if (name === "normal") {
-    return red;
-  } else if (name === "hight") {
+  if (names === "normal") {
     return green;
-  } else if (nmae === "low") {
+  } else if (names === "hight") {
+    return red;
+  } else if (names === "low") {
     return yellow;
   }
 };
@@ -56,7 +67,8 @@ function renderUser(alluser) {
       </td>
 
       <td>
-       <button class="priroty__btn">${element.priority}</button>
+       <button class="priroty__btn text-black ${colorFunction(element.priority)}">${element.priority
+    }</button>
       </td>
 
       <td>
@@ -65,12 +77,58 @@ function renderUser(alluser) {
         </button>
        </td>
     `;
-    console.log(newTr);
     tbody.appendChild(newTr);
   });
 }
 renderUser(data);
 
+//sort
 
+selestSorting.addEventListener('change', (evt)=> {
+
+  function sortingName(users) {
+    if(evt.target.value === 'a-z'){
+      tbody.innerHTML = ""
+      let sorting = users.sort((abc, xzy)=>abc.name.localeCompare(xzy.name))
+      renderUser(sorting);
+    }else if(evt.target.value ==='z-a'){
+      tbody.innerHTML = ""
+      let sorting = users.sort((abc, xyz) => xyz.name.localeCompare(abc.name)) 
+      renderUser(sorting);
+    }else{
+      let sorting = users.sort((abc,xyz)=> abc.nmae.localeCompare(xyz.nmae))
+      tbody.innerHTML = ""
+      renderUser(sorting);
+    }
+  }
+
+  sortingName(data);
+})
+
+
+//filter
+
+selectFilter.addEventListener('change', (event)=>{
+
+ 
+  function filterName(users){
+    if(event.target.value === "high"){
+      tbody.innerHTML = "";
+      let filtered = users.filter((priority) => priority.priority === "high")
+      renderUser(filtered);
+    }
+    else if(event.target.value === "normal"){
+      tbody.innerHTML = "";
+      let filtered = users.filter((priority) => priority.priority === "normal")
+      renderUser(filtered);
+    }
+    else if(event.target.value === "low"){
+      tbody.innerHTML = "";
+      let filtered = users.filter((priority) => priority.priority === "low")
+      renderUser(filtered);
+    }
+  }
+  filterName(data)
+})
 
 
